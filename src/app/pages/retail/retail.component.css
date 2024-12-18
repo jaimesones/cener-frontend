@@ -1,0 +1,109 @@
+.hero-section {
+  background: url('assets/hero-bg.png') no-repeat center center;
+  background-size: cover;
+  color: black;
+  padding: 150px 0;
+  text-align: center;
+}
+
+.hero-section .main-title {
+  font-size: 3rem;
+  font-weight: 900;
+  margin-top: -60px;
+  margin-bottom: 40px;
+}
+
+.hero-section .sub-title {
+  font-size: 2rem;
+  font-weight: 900;
+  margin-bottom: 60px;
+}
+
+.hero-section .cta-button {
+  background-color: #6EC1E4;
+  color: white;
+  font-weight: 700;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-transform: uppercase;
+}
+
+.hero-section .cta-button:hover {
+  background-color: #008e46;
+}
+
+/* Services section */
+.services {
+  background: linear-gradient(to bottom right, #6EC1E4, #FFFFFF);
+  padding: 10px 0;
+  min-height: 800px; 
+}
+
+.services .section-title {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.services .section-title2 {
+  text-align: left;
+  font-size: 2rem;
+  font-weight: 700;
+  padding-left: 10%;
+  margin-bottom: 20px;
+}
+
+.services .section-title3 {
+  text-align: left;
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding-left: 10%;
+  margin-bottom: 20px;
+}
+
+.services .service-cards {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.services .card {
+  background: linear-gradient(to bottom, #a3d9f7, #ffffff);
+  padding: 20px;
+  border-radius: 50%; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 270px; 
+  height: 270px; 
+  text-align: center;
+  display: flex; 
+  justify-content: center;
+  align-items: center; 
+}
+
+
+.services .card img {
+  margin-top: 20px;
+  width: 75%;
+  border-radius: 8px;
+  height:75%;
+  object-fit: cover;
+}
+
+.services .card h3 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-top: 6px;
+}
+
+.services .card p {
+  font-size: 1rem;
+  color: #555;
+}
+
+.clickable-image {
+  cursor: pointer; /* Cambia el cursor a mano cuando se pasa sobre la imagen */
+}

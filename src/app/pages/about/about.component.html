@@ -1,0 +1,42 @@
+<div class="container-fluid py-5">
+
+  <!-- Section: Ciudadanos -->
+  <div class="row align-items-center mb-5">
+    <div class="col-md-6 order-md-2">
+      <img src="assets/paracuellos.jpg" class="img-fluid rounded-4 shadow" alt="Ciudadanos participando" />
+    </div>
+    <div class="col-md-6">
+      <h2 class="fw-bold text-primary">🌿 Libertad energética</h2>
+      <p class="text-muted">
+        Somos una asociación de consumidores, generadores e instaladores sin ánimo de lucro porque queremos tener energía 100% renovable en nuestros hogares, comercios o negocios, 
+        sin depender de las grandes eléctricas ni pensar en la rentabilidad de sus consejos de administración, recuperando la soberanía energética. 
+        Y queremos hacerlo de forma colectiva.
+      </p>
+      <p class="text-muted">
+        Ser parte de nuestro equipo es...
+      </p>
+      <p class="text-muted">
+        <li>Ser protagonista de un nuevo modelo energético en el que la ciudadanía está en el centro de la toma de decisiones y formar parte de un movimiento 
+          mundial de cientos de miles de personas que, organizadas alrededor de sus cooperativas, hemos dado el paso para evitar depender de oligopolios y 
+          grandes empresas eléctricas, y para diseñar la nuestra a la medida de nuestras necesidades.</li>
+        <li>Compartir un proyecto transformador con un grupo de personas preocupadas por reducir la huella ambiental de su consumo energético, 
+          haciendo de nuestra factura eléctrica un instrumento para el apoyo de las energías renovables y la descarbonización de la sociedad.</li>
+        <li>Asegurarse un abastecimiento justo y sostenible de electricidad y saber que la energía que necesitas la gestiona gente como tú, de forma clara y 
+          transparente, sin letra pequeña, sin cláusulas abusivas: en nuestra cooperativa, los consumidores somos los dueños de la energía y 
+          las condiciones las ponemos nosotros y nosotras mismas. </li>
+      </p>
+    </div>
+  </div>
+
+
+  <!-- Call to Action -->
+  <div class="text-center bg-light rounded-4 p-5 shadow-lg">
+    <h2 class="fw-bold text-primary mb-4">🌟 Únete a nuestra Comunidad Energética</h2>
+    <p class="text-muted mb-4">
+      Sé parte del cambio. Juntos, ciudadanos, empresas y gobiernos locales, podemos construir un futuro más limpio, sostenible y justo.
+    </p>
+    <button  *ngIf="!isAuthenticated()" mat-button>
+      <a  routerLink="/home/register" class="btn btn-primary btn-lg shadow" >Participa</a>
+    </button>
+  </div>
+</div>

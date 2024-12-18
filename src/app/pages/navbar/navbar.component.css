@@ -1,0 +1,15 @@
+.spacer {
+  flex: 1 1 auto;
+}
+.custom-toolbar {
+  background: linear-gradient(to bottom, #6EC1E4, #FFFFFF);
+  border-bottom: 2px solid black;   
+  height: 9%;    
+}
+.logo {
+  color: black;
+}
+
+.clickable-image {
+  cursor: pointer; /* Cambia el cursor a mano cuando se pasa sobre la imagen */
+}

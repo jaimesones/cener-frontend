@@ -1,0 +1,33 @@
+/* Opcional: Sombras personalizadas */
+.shadow-lg {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Opcional: Estilos para los títulos */
+  h1, h2 {
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  /* Opcional: Estilo para las imágenes */
+  .img-fluid {
+    border-radius: 20px;
+  }
+  
+  /* Opcional: Espaciado y detalles en el CTA */
+  .bg-light {
+    background-color: #f8f9fa !important;
+  }
+  
+  .btn-primary {
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+  }
+  
+  .btn-primary:hover {
+    background-color: #0b5ed7;
+    border-color: #0b5ed7;
+  }
+
+  li {
+    margin-left: 10px; /* Aumenta el margen entre los elementos de la lista */
+  }
