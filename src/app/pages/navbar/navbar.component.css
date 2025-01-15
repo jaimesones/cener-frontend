@@ -1,15 +1,59 @@
-.spacer {
-  flex: 1 1 auto;
-}
 .custom-toolbar {
-  background: linear-gradient(to bottom, #6EC1E4, #FFFFFF);
-  border-bottom: 2px solid black;   
-  height: 9%;    
-}
-.logo {
-  color: black;
+  background: linear-gradient(to bottom, #6ec1e4, #ffffff);
+  border-bottom: 2px solid black;
+  padding: 0 16px;
+  height: auto;
 }
 
 .clickable-image {
-  cursor: pointer; /* Cambia el cursor a mano cuando se pasa sobre la imagen */
+  cursor: pointer;
+  max-height: 60px; /* Tamaño máximo estándar */
+  max-width: 100%;
+  height: auto; /* Ajuste automático */
+}
+
+.spacer {
+  flex: 1 1 auto;
+}
+
+/* Ajustes para pantallas medianas */
+@media (max-width: 768px) {
+  .custom-toolbar {
+    flex-wrap: wrap; /* Permite que los elementos se ajusten */
+  }
+
+  .clickable-image {
+    max-height: 50px; /* Ajusta el tamaño de la imagen */
+  }
+
+  mat-toolbar button {
+    font-size: 12px;
+    padding: 4px 8px;
+  }
+}
+
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 480px) {
+  .custom-toolbar {
+    flex-direction: column; /* Cambia el diseño a columna */
+    align-items: center; /* Centra los elementos */
+  }
+
+  .clickable-image {
+    max-height: 50px; /* Ajusta el tamaño de la imagen */
+    margin-bottom: 8px; /* Espaciado debajo de la imagen */
+  }
+
+  mat-toolbar button {
+    font-size: 12px; /* Reduce el tamaño de fuente */
+    padding: 6px; /* Ajusta el padding */
+  }
+
+  mat-toolbar button span {
+    display: inline-block; /* Asegura que el texto siempre sea visible */
+  }
+
+  .spacer {
+    display: none; /* Oculta el espaciador en pantallas pequeñas */
+  }
 }
