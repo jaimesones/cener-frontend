@@ -5,6 +5,12 @@
   padding: 150px 0;
   text-align: center;
 }
+@media (max-width: 768px) {
+  .hero-section {
+    background-size: cover;
+    background-attachment: scroll;
+  }
+}
 
 .hero-section .main-title {
   font-size: 3rem;
@@ -106,4 +112,60 @@
 
 .clickable-image {
   cursor: pointer; /* Cambia el cursor a mano cuando se pasa sobre la imagen */
+}
+
+
+/* Ajustes generales para pantallas pequeñas */
+@media (max-width: 768px) {
+  .hero-section {
+    padding: 80px 20px;
+    text-align: center;
+  }
+
+  .hero-section .main-title {
+    font-size: 2rem;
+    margin-top: -30px;
+    margin-bottom: 20px;
+  }
+
+  .hero-section .sub-title {
+    font-size: 1.5rem;
+    margin-bottom: 40px;
+  }
+
+  .hero-section .cta-button {
+    font-size: 0.9rem;
+    padding: 8px 16px;
+  }
+
+  /* Ajusta las tarjetas */
+  .services .service-cards {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .services .card {
+    width: 200px;
+    height: 200px;
+    padding: 15px;
+  }
+
+  .services .card img {
+    width: 70%;
+    height: 70%;
+  }
+
+  .services .card h3 {
+    font-size: 1.1rem;
+  }
+
+  /* Ajusta los títulos de sección */
+  .services .section-title, 
+  .services .section-title2, 
+  .services .section-title3 {
+    font-size: 1.5rem;
+    text-align: center;
+    padding-left: 0;
+  }
 }
