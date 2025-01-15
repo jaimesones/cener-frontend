@@ -7,7 +7,7 @@ const routes: Routes = [
     path: 'home', // Mantenemos 'home' en la raíz
     loadChildren: () => import('./pages/home.module').then(module => module.HomeModule) 
   },
-  { path: '', redirectTo: 'home', pathMatch: 'full' }, // Redirección a /home
+  { path: 'home', redirectTo: '', pathMatch: 'full' }, // Redirección a /home
 ];
 
 @NgModule({
