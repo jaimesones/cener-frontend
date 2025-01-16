@@ -16,7 +16,7 @@ export class RetailComponent {
 
     scrollDown() {
       const currentPosition = this.viewportScroller.getScrollPosition(); // Obtiene la posición actual
-      const scrollOffset = 1000; // Número de píxeles a desplazar hacia abajo
+      const scrollOffset = 1300; // Número de píxeles a desplazar hacia abajo
       this.viewportScroller.scrollToPosition([currentPosition[0], currentPosition[1] + scrollOffset]);
     }
 

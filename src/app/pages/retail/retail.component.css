@@ -5,25 +5,52 @@
   padding: 150px 0;
   text-align: center;
 }
-@media (max-width: 768px) {
-  .hero-section {
-    background-size: cover;
-    background-attachment: scroll;
-  }
-}
 
 .hero-section .main-title {
-  font-size: 3rem;
+  font-size: clamp(2rem, 5vw, 3rem); /* Escala entre 2rem y 3rem */
   font-weight: 900;
   margin-top: -60px;
   margin-bottom: 40px;
 }
 
 .hero-section .sub-title {
-  font-size: 2rem;
+  font-size: clamp(1.2rem, 4vw, 2rem); /* Escala entre 1.2rem y 2rem */
   font-weight: 900;
   margin-bottom: 60px;
 }
+
+@media (max-width: 768px) {
+  .hero-section {
+    background-size: cover;
+    background-attachment: scroll;
+    padding: 100px 0; /* Reduce el padding en pantallas más pequeñas */
+  }
+
+  .hero-section .main-title {
+    font-size: 2.5rem; /* Ajusta el tamaño para pantallas medianas */
+  }
+
+  .hero-section .sub-title {
+    font-size: 1.5rem; /* Ajusta el tamaño para pantallas medianas */
+    line-height: 1.8; /* Aumenta el espaciado entre líneas */
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-section {
+    padding: 80px 0; /* Reduce aún más el padding en pantallas pequeñas */
+  }
+
+  .hero-section .main-title {
+    font-size: 2rem; /* Ajusta el tamaño para pantallas pequeñas */
+  }
+
+  .hero-section .sub-title {
+    font-size: 1.2rem; /* Ajusta el tamaño para pantallas pequeñas */
+    line-height: 1.2; /* Aumenta el espaciado entre líneas */
+  }
+}
+
 
 .hero-section .cta-button {
   background-color: #6EC1E4;
